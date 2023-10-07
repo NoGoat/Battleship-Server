@@ -1,0 +1,5 @@
+CREATE TABLE results(
+    ID int PRIMARY KEY AUTO_INCREMENT,
+    winner VARCHAR(255),
+    loser VARCHAR(255)
+);

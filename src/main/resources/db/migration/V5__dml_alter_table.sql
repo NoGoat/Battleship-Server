@@ -1,0 +1,7 @@
+ALTER TABLE results
+ADD COLUMN time TIMESTAMP,
+ADD COLUMN match_id VARCHAR(255);
+
+ALTER TABLE results
+ADD CONSTRAINT unique_match_id
+UNIQUE (match_id);

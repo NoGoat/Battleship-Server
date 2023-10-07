@@ -9,16 +9,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.sql.Timestamp;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Request {
-
+public class Results
+{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int position;
+    private String winner;
+
+    private String loser;
+
+    private Timestamp time;
+
+    private String match_id;
 }
